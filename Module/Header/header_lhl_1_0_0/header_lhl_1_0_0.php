@@ -1,12 +1,12 @@
 <?php 
     if($check == 0){
-      include(locate_template("Module/Header/header_dls_1_0_0/header_dls_1_0_0_css.php"));          
+      include(locate_template("Module/Header/header_lhl_1_0_0/header_lhl_1_0_0_css.php"));          
     }
 ?>
-<header class="header_dls_1_0_0">
+<header class="header_lhl_1_0_0">
     <div class="container">
-        <div class="header_dls_1_0_0__box">
-            <div class="header_dls_1_0_0__nav" id="headerMenuBtn">
+        <div class="header_lhl_1_0_0__box">
+            <div class="header_lhl_1_0_0__nav" id="headerMenuBtn">
                 <img width="30" height="30" src="<?php echo $path ?>images/header-menu.svg" alt="Logo">
             </div>
             <?php
@@ -17,15 +17,15 @@
                     $div = 'div';
                 }
                 echo '
-                    <'.$div.' class="header_dls_1_0_0__logo">
+                    <'.$div.' class="header_lhl_1_0_0__logo">
                         <a href="/en/">
                             <img width="240" height="78" src="'.$path.'images/logo.svg" alt="logo">
                         </a>
                     </'.$div.'>
                 ';
             ?>
-            <ul class="header_dls_1_0_0__list" id="headerSideBar">
-                <div class="header_dls_1_0_0__logoMb">
+            <ul class="header_lhl_1_0_0__list" id="headerSideBar">
+                <div class="header_lhl_1_0_0__logoMb">
                     <a href="#">
                         <img width="240" height="78" src="<?php echo $path ?>/images/logo.svg" alt="">
                     </a>
@@ -36,16 +36,16 @@
                             if( $list['acf_fc_layout'] == 'menu_don' ):
                                 $main_tt = explode(" | ",  $list["title"]);
                                 echo '
-                                    <li class="header_dls_1_0_0__item">
-                                        <a class="header_dls_1_0_0__link" href="'.$main_tt[1].'">'.$main_tt[0].'</a>
+                                    <li class="header_lhl_1_0_0__item">
+                                        <a class="header_lhl_1_0_0__link" href="'.$main_tt[1].'">'.$main_tt[0].'</a>
                                     </li>
                                 ';
                             elseif( $list['acf_fc_layout'] == 'menu_sub' ):
                                 $main_tt = explode(" | ",  $list["title"]);
                                 echo '
-                                    <li class="header_dls_1_0_0__item">
-                                        <a class="header_dls_1_0_0__link" href="'.$main_tt[1].'">'.$main_tt[0].' <img src="'.$path.'images/icon.svg" alt="icon"></a> 
-                                        <div class="header_dls_1_0_0__dropdown">
+                                    <li class="header_lhl_1_0_0__item">
+                                        <a class="header_lhl_1_0_0__link" href="'.$main_tt[1].'">'.$main_tt[0].' <img src="'.$path.'images/icon.svg" alt="icon"></a> 
+                                        <div class="header_lhl_1_0_0__dropdown">
                                             '.$list["col1"].'
                                         </div>
                                     </li>
@@ -54,14 +54,14 @@
                                 $main_tt = explode(" | ",  $list["title"]);
                                 $main_ct = explode("&nbsp;",  $list["col1"]);
                                 echo '
-                                    <div class="header_dls_1_0_0__menuItem haveDropdown">
-                                        <a class="header_dls_1_0_0__menuTitle" href="'.$main_tt[1].'">'.$main_tt[0].'</a>
-                                        <div class="header_dls_1_0_0__dropdown">
-                                            <div class="header_dls_1_0_0__dropdownBox">
+                                    <div class="header_lhl_1_0_0__menuItem haveDropdown">
+                                        <a class="header_lhl_1_0_0__menuTitle" href="'.$main_tt[1].'">'.$main_tt[0].'</a>
+                                        <div class="header_lhl_1_0_0__dropdown">
+                                            <div class="header_lhl_1_0_0__dropdownBox">
                                 ';
                                     foreach($main_ct as $num => $value){
                                         echo '
-                                            <div class="header_dls_1_0_0__dropdownCate">
+                                            <div class="header_lhl_1_0_0__dropdownCate">
                                                 '.$value.'
                                             </div>
                                         ';
@@ -76,12 +76,12 @@
                     }
                 ?>
             </ul>
-            <select class="header_dls_1_0_0__language en" onfocus='this.size=2;' onblur='this.size=0;' 
+            <select class="header_lhl_1_0_0__language en" onfocus='this.size=2;' onblur='this.size=0;' 
             onchange='this.size=1; this.blur(); urlHandler(this.value);'>
                 <option value="/">English</option>
                 <option value="/vi">Tiếng Việt</option>
             </select>
-            <div class="header_dls_1_0_0__bg" id="headerBg"></div>
+            <div class="header_lhl_1_0_0__bg" id="headerBg"></div>
         </div>
     </div>
 </header>
@@ -104,7 +104,7 @@ menuItem.forEach((item) => {
 
 function urlHandler(value) {                               
   window.location.assign(`${value}`);
-  let x = document.querySelector('.header_dls_1_0_0__language');
+  let x = document.querySelector('.header_lhl_1_0_0__language');
   
   if(x.classList[1] == 'en'){
       x.classList.remove('en');
