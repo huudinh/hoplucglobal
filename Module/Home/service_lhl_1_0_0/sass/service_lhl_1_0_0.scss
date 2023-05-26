@@ -1,8 +1,20 @@
 .service_lhl_1_0_0 {
     font-family: var(--primary-font);
     text-align: center;
+    background:#FDB813;
+    position: relative;
+    z-index: 1;
+    padding-top:20px;
     img{
         max-width: 100%;
+    }
+    &__bg{
+        background:#fff;
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        height: 50px;
     }
     .container{
         position: relative;

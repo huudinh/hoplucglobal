@@ -1,0 +1,23 @@
+.number_lhl_1_0_0 {
+    font-family: var(--primary-font);
+    &__title{
+        font-size: 30px;
+        text-align:center;
+        margin-bottom:20px;
+    }
+    &__box{
+        text-align: center;
+        background:var(--primary-color);
+        color:white;
+        padding:20px 0;
+        &Number{
+            color:var(--secondary-color);
+            font-size:28px;
+            font-weight: 600;
+        }
+    }
+    .container{
+        display:flex;
+        justify-content: space-between;
+    }
+}
