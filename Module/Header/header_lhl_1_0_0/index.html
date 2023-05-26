@@ -9,22 +9,12 @@
     <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css">
     <link rel="stylesheet" href="sass/header_lhl_1_0_0.min.css">
     <style>
-        body{
-            background:#1E1E1E;
-        }
         :root {
-            --primary-font: 'Mulish', sans-serif;
+            --primary-font: 'Roboto', sans-serif;
             --secondary-font: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
-        @media (min-width: 1441px) {
-            .container {
-                width: 80%;
-            }
-        }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet"> 
+
 </head>
 
 <body>
@@ -36,93 +26,89 @@
                 </div>
                 <div class="header_lhl_1_0_0__logo">
                     <a href="index.html">
-                        <img width="240" height="78" src="images/logo.svg" alt="">
+                        <img width="120" height="120" src="images/logo.svg" alt="">
                     </a>
                 </div>
-                <ul class="header_lhl_1_0_0__list" id="headerSideBar">
-                    <div class="header_lhl_1_0_0__logoMb">
-                        <a href="index.html">
-                            <img width="240" height="78" src="images/logo.svg" alt="">
-                        </a>
-                    </div>
-                    <li class="header_lhl_1_0_0__item">
-                        <a class="header_lhl_1_0_0__link" href="company.html">COMPANY <img src="images/icon.svg" alt="icon"></a> 
-                        <div class="header_lhl_1_0_0__dropdown">
-                            <ul>
-                                <li><a href="#">ABOUT US</a></li>
-                                <li><a href="#">OUR SERVICES</a></li>
-                                <li><a href="#">NEWS</a></li>
+                <div class="header_lhl_1_0_0__boxMenu">
+                    <div class="header_lhl_1_0_0__boxTop">
+                        <div class="header_lhl_1_0_0__boxCall">
+                            <span class="header_lhl_1_0_0__boxCallText">Hotline: + 84024.63.28.47.68</span> 
+                            <span class="header_lhl_1_0_0__boxCallIcon header_lhl_1_0_0__boxCallIconHotline"></span>
+                        </div>
+                        <div class="header_lhl_1_0_0__boxCall">
+                            <span class="header_lhl_1_0_0__boxCallText">Tel: + 84024.63.28.47.68</span> 
+                            <span class="header_lhl_1_0_0__boxCallIcon header_lhl_1_0_0__boxCallIconPhone"></span>
+                        </div>
+                        <form action="/" id="searchform" name="searchform" method="get" onsubmit="return checkSearch()">	
+                            <div class="header_lhl_1_0_0__search">
+                                <input id="s" name="s" type="text" placeholder="Type your keyword here... ...">
+                                <button type="submit">
+                                    <img width="14" height="14" src="images/search.png" alt="search">
+                                </button>
+                            </div>
+                        </form>
+                        <div class="header_lhl_1_0_0__lang">
+                            <div class="header_lhl_1_0_0__langActive">
+                                <span>Languages: </span>
+                                <img src="images/en.png" title="Languages" alt="Languages">
+                                <span class="arrow"></span>
+                            </div>
+                            <ul class="header_lhl_1_0_0__langShadow">
+                                <li>
+                                    <a href="/" title="English">
+                                        <span>English</span>
+                                        <img src="images/en.png" title="English" alt="English">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/vi/" title="Vietnam">
+                                        <span>Vietnam</span>
+                                        <img src="images/vi.png" title="English" alt="English">
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-                    </li>
-                    <li class="header_lhl_1_0_0__item">
-                        <a class="header_lhl_1_0_0__link" href="brand_cate.html">BRANDS</a>
-                    </li>
-                    <li class="header_lhl_1_0_0__item">
-                        <a class="header_lhl_1_0_0__link" href="product.html">PROJECTS</a>
-                    </li>
-                    <li class="header_lhl_1_0_0__item">
-                        <a href="#" class="header_lhl_1_0_0__link">CONTACT</a>
-                    </li>
-                    <li class="header_lhl_1_0_0__item">
-                        <a class="header_lhl_1_0_0__link">360 SHOWROOM</a>
-                    </li>                    
-                </ul>
-                <select class="header_lhl_1_0_0__language en" onfocus='this.size=2;' onblur='this.size=0;' 
-                onchange='this.size=1; this.blur(); urlHandler(this.value);'>
-                    <option value="#en">English</option>
-                    <option value="#vi">Tiếng Việt</option>
-                </select>
+                    </div>
+                    <ul class="header_lhl_1_0_0__list" id="headerSideBar">
+                        <div class="header_lhl_1_0_0__logoMb">
+                            <a href="index.html">
+                                <img width="120" height="120" src="images/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <li class="header_lhl_1_0_0__item">
+                            <a class="header_lhl_1_0_0__link" href="#">home</a>                        
+                        </li>
+                        <li class="header_lhl_1_0_0__item">
+                            <a class="header_lhl_1_0_0__link" href="#">about us</a> 
+                            <div class="header_lhl_1_0_0__dropdown">
+                                <ul>
+                                    <li><a href="#">ABOUT US</a></li>
+                                    <li><a href="#">OUR SERVICES</a></li>
+                                    <li><a href="#">NEWS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_lhl_1_0_0__item">
+                            <a class="header_lhl_1_0_0__link" href="#">our services</a>
+                        </li>
+                        <li class="header_lhl_1_0_0__item">
+                            <a class="header_lhl_1_0_0__link" href="#">Our clients</a>
+                        </li>
+                        <li class="header_lhl_1_0_0__item">
+                            <a href="#" class="header_lhl_1_0_0__link">news & events</a>
+                        </li>
+                        <li class="header_lhl_1_0_0__item">
+                            <a class="header_lhl_1_0_0__link">Gallery & Video</a>
+                        </li>                    
+                        <li class="header_lhl_1_0_0__item">
+                            <a class="header_lhl_1_0_0__link">contact us</a>
+                        </li>                    
+                    </ul>
+                </div>
                 <div class="header_lhl_1_0_0__bg" id="headerBg"></div>
             </div>
         </div>
     </header>
 </body>
-<!-- <script src="js/header_lhl_1_0_0.js"></script> -->
-<script>
-    document.getElementById("headerMenuBtn").addEventListener("click", () => {
-  document.getElementById("headerSideBar").classList.add("show");
-  document.getElementById("headerBg").style.display = "block";
-});
-document.getElementById("headerBg").addEventListener("click", () => {
-  document.getElementById("headerSideBar").classList.remove("show");
-  document.getElementById("headerBg").style.display = "none";
-});
-
-const menuItem = document.querySelectorAll(".header_sci_1_0_0__item");
-menuItem.forEach((item) => {
-  item.addEventListener("click", () => {
-    item.classList.toggle("open");
-  });
-});
-
-window.onscroll = () => {
-  scrollFunction();
-};
-
-const scrollFunction = () => {
-  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-    document
-      .getElementsByClassName("header_sci_1_0_0")[0]
-      .classList.add("header_sci_1_0_0--active");
-  } else {
-    document
-      .getElementsByClassName("header_sci_1_0_0")[0]
-      .classList.remove("header_sci_1_0_0--active");
-  }
-};
-function urlHandler(value) {                               
-  window.location.assign(`${value}`);
-  let x = document.querySelector('.header_lhl_1_0_0__language');
-  
-  if(x.classList[1] == 'en'){
-      x.classList.remove('en');
-      x.classList.add('vi');
-  } else {
-      x.classList.remove('vi');
-      x.classList.add('en');
-  }
-}
-</script>
-
+<script src="js/header_lhl_1_0_0.js"></script>
 </html>
