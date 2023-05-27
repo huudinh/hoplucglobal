@@ -17,7 +17,7 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
     }
   }
   
-  document.addEventListener('DOMContentLoaded', function () {
+  // document.addEventListener('DOMContentLoaded', function () {
     animateNumber(4000000, 3000, 0, function (number) {
       const formattedNumber = number.toLocaleString()
       document.getElementById('next-count-1').innerText = formattedNumber
@@ -44,4 +44,4 @@ function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) 
       const formattedNumber = number.toLocaleString()
       document.getElementById('next-count-6').innerText = formattedNumber
     })
-  })
+  // })

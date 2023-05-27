@@ -1,10 +1,3 @@
-// Footer hide
-setTimeout(()=>{
-    let x = document.getElementsByTagName('footer')[0];
-    let y = document.getElementsByClassName('main_dls_1_0_0 ')[0];
-    y.setAttribute("style", `margin-bottom: ${x.clientHeight}px !important;`);  
-}, 3000);
-
 document.addEventListener("scroll", function () {
     myLazy('img.lazy', 'src');
     myLazy('source.lazy', 'srcset');
