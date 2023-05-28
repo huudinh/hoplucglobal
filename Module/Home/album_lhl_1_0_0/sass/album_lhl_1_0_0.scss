@@ -1,0 +1,117 @@
+@import "slider";
+.album_lhl_1_0_0 {
+    padding: 40px 0 20px 0;
+    font-family: var(--primary-font);
+    margin: 0 auto;
+    &__title {
+        margin: 20px 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &__Video {
+        display: table;
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        background: #000;
+        &Icon {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 1;
+            background: url(images/youtube.png) center no-repeat;
+            transition: .3s ease-out;
+            background-size: 100%;
+            width: 60px;
+            height: 60px;
+            left: calc(50% - 23px);
+            top: calc(50% - 55px);
+            transition: .3s;
+            opacity: 1;
+        }
+    }
+    &__box {
+        &Photo {
+            padding-left: 100px;
+        }
+    }
+    &__pic {
+        background-color: #ccc;
+        overflow: hidden;
+        &--big {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        img {
+            object-fit: cover;
+            height: auto;
+            display: block;
+            transition: all 0.2s linear;
+        }
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+    &__item {
+        width: 32.3%;
+        height: 100px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:1180px) {
+    .album_lhl_1_0_0 .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .album_lhl_1_0_0 .container {
+        max-width: 90%;
+    }
+    .album_lhl_1_0_0__icon {
+        left: -40px;
+        width: 25px;
+    }
+}
+
+@media (max-width:820px) {
+    .album_lhl_1_0_0__item {
+        width: 48.5%;
+    }
+}
+
+@media (max-width:600px) {
+    .album_lhl_1_0_0__item {
+        width: 100%;
+    }
+    .album_lhl_1_0_0__des {
+        max-width: 100%;
+        text-align: justify;
+    }
+    .album_lhl_1_0_0__pic img {
+        width: 100%;
+        ;
+        margin-bottom: 20px;
+    }
+    .album_lhl_1_0_0__pic:hover img {
+        transform: scale(1);
+    }
+    .album_lhl_1_0_0__pic {
+        background: #000
+    }
+}
