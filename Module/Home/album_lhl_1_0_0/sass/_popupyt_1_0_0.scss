@@ -1,0 +1,52 @@
+.popupyt_1_0_0 {
+    display: table;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    background: #000;
+    &.active {
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    &__icon {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background: url(../images/youtube.png) center no-repeat;
+        transition: 0.3s ease-out;
+        background-size: 100%;
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        top: 50%;
+        transition: 0.3s;
+        transform: translate(-20px, -20px);
+        // -webkit-filter: grayscale(100%);
+        // filter: grayscale(100%);
+        opacity: 1;
+    }
+    img {
+        position: relative;
+        opacity: .5;
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: .6s;
+    }
+    &:hover {
+        img {
+            opacity: .8;
+        }
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none
+    }
+}
