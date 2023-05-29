@@ -1,13 +1,14 @@
 function imgTheme(path, tag) {
     let x = document.querySelectorAll(tag);
     for (let item of x) {
-        if(!item.classList.contains('noneImg')){
+        if (!item.classList.contains('noneImg')) {
             let src = item.getAttribute('src');
             src = path + src;
             item.setAttribute('src', src);
         }
     }
 }
+
 function sourceTheme(path, tag) {
     let x = document.querySelectorAll(tag);
     for (let item of x) {
@@ -16,7 +17,7 @@ function sourceTheme(path, tag) {
         item.setAttribute('srcset', srcset);
     }
 }
-document.addEventListener("scroll", function () {
+document.addEventListener("scroll", function() {
     myLazy('img.lazy', 'src');
     myLazy('source.lazy', 'srcset');
     myLazy('.lazy-bg', 'img-bg');
@@ -100,61 +101,87 @@ function LazyShowScreen(sec, attr) {
     }
 }
 // Ajaxload
-async function loadDoc(url, cFunction) {
-    return () => {
-        const xhttp = new XMLHttpRequest();
-        xhttp.onload = function() {cFunction(this);}
-        xhttp.open("GET", url);
-        xhttp.send();
-    }
+function loadDoc(url, cFunction) {
+    // return () => {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() { cFunction(this); }
+    xhttp.open("GET", url);
+    xhttp.send();
+    // }
 }
 
 // Render Module
-async function renderModule (type, module, data, logic){
-    try {
-        // Khai baos Module
-        let url = `${type}/${module}/`;
-       
-        const res = await loadDoc(`${url}code.html`, insertLayout);
-        res();
-        
-        // Function xu ly
-        function insertLayout(xhttp) {
-            document.getElementById(`${module}`).innerHTML = xhttp.responseText;
-            imgTheme(`${url}`, `.${module} img`);
+function renderModule(type, module, data, logic) {
+    setTimeout(() => {
+        try {
+            // Khai baos Module
+            let url = `${type}/${module}/`;
+
+            loadDoc(`${url}code.html`, insertLayout);
+
+
+            // Function xu ly
+            function insertLayout(xhttp) {
+                document.getElementById(`${module}`).innerHTML = xhttp.responseText;
+                imgTheme(`${url}`, `.${module} img`);
+            }
+
+            // Khai baos url
+            if ((data == 'data') || (logic == 'logic')) {
+                var script = document.createElement('script');
+                script.type = "text/javascript";
+                script.innerHTML = `let ${module}_url = '${url}'`;
+                var t = document.getElementsByTagName('script')[0];
+                t.parentNode.insertBefore(script, t);
+            }
+
+            // Khai bao api
+            if (data == 'data') {
+                var script = document.createElement('script');
+                script.type = "text/javascript";
+                script.src = `${url}js/${module}_data.js`;
+                var t = document.getElementsByTagName('script')[0];
+                t.parentNode.insertBefore(script, t);
+            }
+
+            // Khai bao js
+            if (logic == 'logic') {
+                setTimeout(() => {
+                    var script = document.createElement('script');
+                    script.type = "text/javascript";
+                    script.src = `${url}js/${module}.js`;
+                    var t = document.getElementsByTagName('script')[0];
+                    t.parentNode.insertBefore(script, t);
+                }, 200)
+            }
+
+            // Khai bao css
+            var link = document.createElement('link');
+            link.rel = "stylesheet";
+            link.href = `${url}/sass/${module}.min.css`;
+            var t = document.getElementsByTagName('link')[0];
+            t.parentNode.insertBefore(link, t);
+
+        } catch (err) {
+            console.log(err);
         }
-    
-        // Khai baos url
-        if ((data == 'data') || (logic == 'logic')){
-            var script = document.createElement('script');
-            script.type = "text/javascript";
-            script.innerHTML = `let ${module}_url = '${url}'`;
-            var t=document.getElementsByTagName('script')[0];t.parentNode.insertBefore(script,t);   
-        }
-    
-        // Khai bao api
-        if (data == 'data'){
-            var script = document.createElement('script');
-            script.type = "text/javascript";
-            script.src = `${url}js/${module}_data.js`;
-            var t=document.getElementsByTagName('script')[0];t.parentNode.insertBefore(script,t);   
-        }
-    
-        // Khai bao js
-        if (logic == 'logic'){
-            var script = document.createElement('script');
-            script.type = "text/javascript";
-            script.src = `${url}js/${module}.js`;
-            var t=document.getElementsByTagName('script')[0];t.parentNode.insertBefore(script,t);   
-        }
-    
-        // Khai bao css
-        var link = document.createElement('link');
-        link.rel = "stylesheet";
-        link.href = `${url}/sass/${module}.min.css`;
-        var t=document.getElementsByTagName('link')[0];t.parentNode.insertBefore(link,t);   
-     
-    } catch(err) {
-      console.log(err);
-    }
+    }, 800)
 }
+
+function onReady(callback) {
+    var intervalId = window.setInterval(function() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalId);
+            callback.call(this);
+        }
+    }, 1200);
+}
+
+function setVisible(selector, visible) {
+    document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function() {
+    setVisible('.page', true);
+    setVisible('#loading', false);
+});
