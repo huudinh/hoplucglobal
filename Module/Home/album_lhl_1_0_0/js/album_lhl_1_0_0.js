@@ -33,10 +33,10 @@ const modalPop = (link) => {
           <div class="modal-bg" id="modal-bg"></div>
           <div class="modal-box modal-box-img animate-zoom">
               <div class="modal-pic" style="text-align:center">
-                    <div class="slider"></div>
-                <div class="slider__control">
-                    <button class="slider__arrow slider__arrow--prev"><i class="icon-angle-left"></i></button>
-                    <button class="slider__arrow slider__arrow--next"><i class="icon-angle-right"></i></button>
+                    <div class="album"></div>
+                <div class="album__control">
+                    <button class="album__arrow album__arrow--prev"><i class="icon-angle-left"></i></button>
+                    <button class="album__arrow album__arrow--next"><i class="icon-angle-right"></i></button>
                 </div>
               </div>
           </div>
@@ -59,9 +59,9 @@ function popupPhoto(data, index) {
 // compoinent slide
 const slideCard = (data) => {
     return `
-        <div class="slider__item ">
-            <img class="slider__image" src="${data.image}" alt="${data.text}">
-            <p class="slider__text">${data.text}</p>
+        <div class="album__item ">
+            <img class="album__image" src="${data.image}" alt="${data.text}">
+            <p class="album__text">${data.text}</p>
         </div>
     `;
 };
@@ -69,9 +69,9 @@ const slideCard = (data) => {
 
 function createSlider(data, index) {
     for (let i = 0; i < data.length; i++) {
-        let slider = document.querySelector('.slider');
+        let album = document.querySelector('.album');
         if (i < 2) {
-            slider.innerHTML += slideCard(data[index]);
+            album.innerHTML += slideCard(data[index]);
         }
         if (index == data.length - 1) {
             index = 0;
@@ -80,10 +80,10 @@ function createSlider(data, index) {
         }
     }
 
-    const btnNext = document.getElementsByClassName('slider__arrow--next');
-    const btnPrev = document.getElementsByClassName('slider__arrow--prev');
-    const img = document.getElementsByClassName('slider__image');
-    const text = document.getElementsByClassName('slider__text');
+    const btnNext = document.getElementsByClassName('album__arrow--next');
+    const btnPrev = document.getElementsByClassName('album__arrow--prev');
+    const img = document.getElementsByClassName('album__image');
+    const text = document.getElementsByClassName('album__text');
     let i = 0;
     btnNext[0].addEventListener("click", function() {
         plusDivs(1);
@@ -108,21 +108,36 @@ function createSlider(data, index) {
             text[x].innerText = data[i].text;
         }
     })
-    let slideIndex = 1;
-    showDivs(slideIndex);
+    let albumIndex = 1;
+    showDivs(albumIndex);
 
     function plusDivs(n) {
-        showDivs(slideIndex += n);
+        showDivs(albumIndex += n);
     }
 
     function showDivs(n) {
         let i;
-        let x = document.getElementsByClassName("slider__item");
-        if (n > x.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = x.length }
+        let x = document.getElementsByClassName("album__item");
+        if (n > x.length) { albumIndex = 1 }
+        if (n < 1) { albumIndex = x.length }
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
-        x[slideIndex - 1].style.display = "block";
+        x[albumIndex - 1].style.display = "block";
     }
+}
+
+const ytCard = (id) => {
+    return `
+        <iframe src="//www.youtube.com/embed/${id}?rel=0&autoplay=1&mute=1" name="youtube embed" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    `;
+}
+
+let clips = document.getElementsByClassName('popupyt_1_0_0');
+for(let i = 0; i < clips.length; i++){
+    clips[i].addEventListener('click', () => {
+        const id = clips[i].getAttribute('data-video');
+        clips[i].innerHTML = ytCard(id);
+        clips[i].classList.add('active');
+    })
 }

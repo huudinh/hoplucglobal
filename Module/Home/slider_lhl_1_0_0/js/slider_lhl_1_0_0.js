@@ -5,8 +5,8 @@ start();
 function start() {
     showSlider(slides);
     changeSlide(0);
-}
 
+}
 function showSlider(slides) {
     let sliderContent = document.querySelector('.slider__content');
     let slider = document.querySelector('.slider__control');
