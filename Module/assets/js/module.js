@@ -102,12 +102,10 @@ function LazyShowScreen(sec, attr) {
 }
 // Ajaxload
 function loadDoc(url, cFunction) {
-    // return () => {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() { cFunction(this); }
     xhttp.open("GET", url);
     xhttp.send();
-    // }
 }
 
 // Render Module

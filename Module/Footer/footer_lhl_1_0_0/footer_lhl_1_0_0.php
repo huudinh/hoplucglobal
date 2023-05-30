@@ -1,14 +1,14 @@
 <?php
     if($check == 0){
-        include(locate_template("Module/Footer/footer_dls_1_0_0/footer_dls_1_0_0_css.php")); 
+        include(locate_template("Module/Footer/footer_lhl_1_0_0/footer_lhl_1_0_0_css.php")); 
     }
 ?>
-<footer class="footer_dls_1_0_0">
+<footer class="footer_lhl_1_0_0">
     <div class="container">
-        <div class="footer_dls_1_0_0__title">CONTACT US</div>
+        <div class="footer_lhl_1_0_0__title">CONTACT US</div>
         
-        <form class="footer_dls_1_0_0__wrapper" id="register-form">
-            <div class="footer_dls_1_0_0__form">
+        <form class="footer_lhl_1_0_0__wrapper" id="register-form">
+            <div class="footer_lhl_1_0_0__form">
                 <input type="text" name="iemail" placeholder="YOUR EMAIL">
                 <label>Comments</label>
                 <textarea name="inote" cols="30" rows="5"></textarea>
@@ -20,18 +20,18 @@
                 border-bottom:1px solid #c00 !important;
             }
         </style>
-        <div class="footer_dls_1_0_0__social">
+        <div class="footer_lhl_1_0_0__social">
             <a href="https://www.facebook.com/landastudio.vn" target="_blank" rel="nofollow"><img width="32" height="32" src="<?php echo $path ?>images/icon-fb.svg" alt="fb"/></a>
             <a href="https://www.instagram.com/landastudio1010/" target="_blank" rel="nofollow"><img width="32" height="32" src="<?php echo $path ?>images/icon-ins.svg" alt="fb"/></a>
             <a href="https://www.youtube.com/channel/UCIPUMXIzV6AhSGnrmQLbPlw" target="_blank" rel="nofollow"><img width="32" height="32" src="<?php echo $path ?>images/icon-youtube.svg" alt="fb"/></a>
         </div>
-        <div class="footer_dls_1_0_0__logo">
+        <div class="footer_lhl_1_0_0__logo">
             <img width="215" height="111" src="<?php echo $path ?>images/logo.svg" alt="logo">
         </div>
-        <div class="footer_dls_1_0_0__info">
+        <div class="footer_lhl_1_0_0__info">
             <?php echo $field["info"] ?>
         </div>
-        <div class="footer_dls_1_0_0__bot"> ©Copyright 2022. All Rights Reserved.</div>
+        <div class="footer_lhl_1_0_0__bot"> ©Copyright 2022. All Rights Reserved.</div>
     </div>
 </footer>
 <script>
