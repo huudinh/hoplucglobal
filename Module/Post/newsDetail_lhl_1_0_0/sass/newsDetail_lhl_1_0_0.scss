@@ -1,0 +1,42 @@
+.newsDetail_lhl_1_0_0 {
+    padding: 20px 0;
+    font-family: var(--primary-font);
+    margin: 0 auto;
+    .container {
+        max-width: 70%;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        margin: 20px 0;
+        color: var(--primary-color);
+    }
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 15px auto;
+        height: auto;
+    }
+    &__content {
+        margin: 0 auto;
+        text-align: justify;
+        p {
+            margin: 20px 0;
+        }
+        h2,
+        h3,
+        h4 {
+            text-align: center;
+            margin: 50px 0 20px;
+        }
+        h2 {
+            font-size: 20px
+        }
+        h3 {
+            font-size: 18px
+        }
+        h4 {
+            font-size: 16px
+        }
+    }
+}
