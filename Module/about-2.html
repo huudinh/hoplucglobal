@@ -18,12 +18,19 @@
     <div class="page">
         <div id="header_lhl_1_0_0"></div>
         <div id="slider_lhl_1_1_0"></div>
+        <script>
+            setTimeout(() => {
+                document.querySelector('.slider_lhl_1_1_0__slide img').src = 'Home/slider_lhl_1_1_0/images/about-2.jpg';
+                document.querySelector('.slider_lhl_1_1_0__textContent').innerHTML = 'Visions & values';;
+            }, 1000)
+        </script>
         <main class="container">
             <div class="row">
                 <div class="col-lg-9">
                     <div id="newsDetail_lhl_1_0_0"></div>
                     <script>
                         setTimeout(()=>{
+                            document.querySelector('.newsDetail_lhl_1_0_0__title').innerHTML = 'Visions & values';
                             document.querySelector('.newsDetail_lhl_1_0_0__contentNormal').style.display = 'block';
                         }, 1000);
                     </script>

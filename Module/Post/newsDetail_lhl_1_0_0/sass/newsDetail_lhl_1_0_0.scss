@@ -20,6 +20,14 @@
     &__content {
         margin: 0 auto;
         text-align: justify;
+        &News{
+            &Item{
+                display: flex;
+            }
+        }
+        .none{
+            display: none;
+        }
         p {
             margin: 20px 0;
         }
