@@ -1,0 +1,46 @@
+.newsCate_lhl_1_0_0 {
+    margin: 20px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        margin: 20px 0 10px;
+        color: var(--primary-color);
+    }
+    &__content {
+        font-size: 15px;
+        margin: 5px 0 25px;
+        flex: 1;
+        &Title {
+            font-weight: 700;
+        }
+        &More {
+            text-align: right;
+            a {
+                color: #c00;
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+    span {
+        font-size: 14px;
+        color: #999999;
+        margin-bottom: 10px;
+        display: block;
+    }
+    &__item {
+        display: flex;
+        border-top: 1px dotted #ccc;
+        padding-top: 20px;
+    }
+    &__pic {
+        width: 200px;
+        margin-right: 20px;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

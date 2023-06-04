@@ -20,11 +20,21 @@
         <div id="slider_lhl_1_1_0"></div>
         <script>
             setTimeout(() => {
-                document.querySelector('.slider_lhl_1_1_0__slide img').src = 'Home/slider_lhl_1_1_0/images/about-8.jpg';
-                document.querySelector('.slider_lhl_1_1_0__textContent').innerHTML = 'CONTACT US';
+                document.querySelector('.slider_lhl_1_1_0__slide img').src = 'Home/slider_lhl_1_1_0/images/about-10.jpg';
+                document.querySelector('.slider_lhl_1_1_0__textContent').innerHTML = 'News & Events';
             }, 1000)
         </script>
-        <div id="contact_lhl_1_0_0"></div>
+        <main class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div id="newsCate_lhl_1_0_0"></div>
+                    <div id="pagination_lhl_1_0_0"></div>
+                </div>
+                <div class="col-lg-3">
+                    <div id="navSidebar_lhl_1_0_0"></div>
+                </div>
+            </div>
+        </main>
         <div id="footer_lhl_1_0_0"></div>
     </div>
     <div id="loading"></div>
@@ -34,8 +44,11 @@
     // Type, Module, data, logic
     renderModule('Header', 'header_lhl_1_0_0', '', 'logic');
     renderModule('Home', 'slider_lhl_1_1_0', '', '');
-    renderModule('Home', 'contact_lhl_1_0_0', '', '');
+    renderModule('Category', 'newsCate_lhl_1_0_0', '', '');
+    renderModule('Category', 'pagination_lhl_1_0_0', '', '');
+    renderModule('Post', 'navSidebar_lhl_1_0_0', '', '');
     renderModule('Footer', 'footer_lhl_1_0_0', '', '');
 </script>
+
 
 </html>
