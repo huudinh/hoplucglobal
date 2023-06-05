@@ -1,0 +1,34 @@
+.clients_lhl_1_0_0{
+    ul{
+        padding: 0;
+        margin: 15px 0 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        padding: 10px;
+        margin:0;
+        width: 25%;
+    }
+    &__pic {
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0,0,0,.1);
+        display: block;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: auto;
+            transition: all 0.2s linear;
+        }
+        &:hover {
+            img {
+                filter: grayscale(0);
+                transform: scale(1.05);
+            }
+        }
+    }
+}

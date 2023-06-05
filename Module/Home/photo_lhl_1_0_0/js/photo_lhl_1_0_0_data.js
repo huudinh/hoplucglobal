@@ -1,0 +1,122 @@
+const photo_lhl_1_0_0_menu = [{
+    name: 'Who we are!',
+    link: '#album-1',
+    img: [{
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic2.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic2.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic1.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic1.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic1.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic1.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic2.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic2.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }],
+}, {
+    name: 'Visions & values',
+    link: '#album-2',
+    img: [{
+        small: `${photo_lhl_1_0_0_url}images/pic1.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic1.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic2.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic2.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic1.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic1.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic2.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic2.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }],
+}, {
+    name: 'Why choose Hopluc global?',
+    link: '#album-3',
+    img: [{
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic1.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic1.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic1.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic1.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic2.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic2.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic3.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic3.jpg`
+    }],
+}, {
+    name: 'Training Centers',
+    link: '#album-4',
+    img: [{
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }, {
+        small: `${photo_lhl_1_0_0_url}images/pic4.jpg`,
+        large: `${photo_lhl_1_0_0_url}images/pic4.jpg`
+    }]
+}]

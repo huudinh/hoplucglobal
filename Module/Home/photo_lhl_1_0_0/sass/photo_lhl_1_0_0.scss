@@ -1,0 +1,246 @@
+@keyframes slideIn {
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(0%);
+    }
+}
+
+.photo_1_1_0 {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    &__sidebar {
+        width: 25%;
+    }
+    &__content {
+        width: 75%;
+    }
+    &__bg {
+        display: none;
+    }
+    @media(max-width:1200px) {
+        margin-top: 80px;
+    }
+    @media (max-width:767px) {
+        margin-top: 50px;
+        flex-wrap: wrap;
+        gap: 10px;
+        .slideIn {
+            animation: slideIn 0.3s;
+        }
+        &__sidebar {
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 58px;
+            z-index: 11;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__bg {
+            display: block;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.5);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+    }
+    @media (max-width:320px) {
+        margin-bottom: 20px;
+        &__sidebar {
+            top: 50px;
+        }
+    }
+}
+
+.sidebar_da_1_1_0 {
+    background:#fff;
+    border-radius: 4px;
+    padding:5px 20px;
+    &__title {
+        font-weight: 600;
+        padding: 5px 0;
+        button {
+            display: none;
+        }
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        font-size:14px;
+        li {
+            padding: 10px 0;
+            cursor: pointer;
+            border-top: 1px dotted #000;
+            font-weight: 600;
+            a{
+                color:var(--primary-color);
+                &:hover{
+                    color:var(--secondary-color);
+                }
+            }
+            &.active { }
+        }
+    }
+    @media(max-width:1180px) {
+        &__title {
+            font-size: 18px;
+        }
+        ul {
+            font-size: 14px;
+        }
+    }
+    @media (max-width:767px) {
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            button {
+                padding: 0;
+                display: block;
+                font-size: 12px;
+                color: #007471;
+                font-weight: 600;
+                background: none;
+                border: none;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+        ul {
+            width: 50%;
+            margin-left: auto;
+            height: 100vh;
+            min-width: 180px;
+        }
+    }
+}
+
+.photo_lhl_1_0_0 {
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        margin: 20px 0;
+        color: var(--primary-color);
+        border-bottom: 1px solid #d3d3d3;
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__item {
+        width: 23%;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__btn {
+        text-align: center;
+        margin-top: 10px;
+        button {
+            font-size: 16px;
+            color: #007471;
+            font-weight: 600;
+            background: none;
+            border: none;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    @media(max-width:1180px) {
+        &__title {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width:767px) {
+        &__title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__box {
+            gap: 10px;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__btn {
+            margin-top: 10px;
+            button {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.modalphoto_lhl_1_0_0 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    &__box {
+        position: relative;
+        margin-top: 20vh;
+        width: 90%;
+        max-width: 700px;
+        padding: 20px 30px;
+        height: fit-content;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 32px;
+        cursor: pointer;
+        line-height: 20px;
+    }
+    &__control {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        button {
+            padding: 0;
+            background: none;
+            border: none;
+            width: fit-content;
+            cursor: pointer;
+            img {
+                width: 32px;
+            }
+        }
+    }
+    &__next {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+}

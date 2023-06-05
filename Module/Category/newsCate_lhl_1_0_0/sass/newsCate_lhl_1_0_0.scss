@@ -1,11 +1,5 @@
 .newsCate_lhl_1_0_0 {
     margin: 20px 0;
-    &__title {
-        font-weight: 700;
-        font-size: 26px;
-        margin: 20px 0 10px;
-        color: var(--primary-color);
-    }
     &__content {
         font-size: 15px;
         margin: 5px 0 25px;
@@ -31,7 +25,7 @@
     }
     &__item {
         display: flex;
-        border-top: 1px dotted #ccc;
+        border-bottom: 1px dotted #ccc;
         padding-top: 20px;
     }
     &__pic {
