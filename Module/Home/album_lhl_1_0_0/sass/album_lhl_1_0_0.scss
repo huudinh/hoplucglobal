@@ -74,24 +74,28 @@
 }
 
 @media (max-width:1024px) {
-    .album_lhl_1_0_0 .container {
-        max-width: 90%;
-    }
     .album_lhl_1_0_0__icon {
         left: -40px;
         width: 25px;
     }
+    .album_lhl_1_0_0__boxPhoto{
+        padding-left:50px;
+    }
 }
-
 @media (max-width:820px) {
+    .album_lhl_1_0_0__boxPhoto{
+        padding-left:0;
+    }
     .album_lhl_1_0_0__item {
-        width: 48.5%;
+        width: 31.5%;
+        height:44px;
     }
 }
 
 @media (max-width:600px) {
     .album_lhl_1_0_0__item {
-        width: 100%;
+        width: 32%;
+        height: 70px;
     }
     .album_lhl_1_0_0__des {
         max-width: 100%;
@@ -107,5 +111,12 @@
     }
     .album_lhl_1_0_0__pic {
         background: #000
+    }
+    .album_lhl_1_0_0__title {
+        margin: 15px 0 5px;
+        text-align: center;
+    }
+    .album_lhl_1_0_0 {
+        padding: 20px 0 20px 0;
     }
 }

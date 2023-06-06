@@ -27,4 +27,12 @@ var slide_step = tns({
     autoplayTimeout: 1000,
     // autoplayButton: '#customize-toggle',
     gutter: 10,
+    responsive: {
+        0: {
+            items: 2,
+        },
+        500: {
+            items: 3,
+        }
+    },
 });

@@ -49,6 +49,14 @@
         }
     }
 }
-@media (max-width:1440px){
-   
+@media (max-width:480px){
+    .service_lhl_1_0_0{
+        padding:20px 20px 0;
+    }
+    .service_lhl_1_0_0__control .next {
+        right: -18px;
+    }
+    .service_lhl_1_0_0__control .prev {
+        left: -18px;
+    }
 }

@@ -58,3 +58,13 @@
         }
     }
 }
+@media (max-width:600px){
+    .news_lhl_1_0_0__box a {
+        width: 100%;
+        display: flex;
+    }
+    .news_lhl_1_0_0__box a img {
+        width: 40%;
+        margin-right: 15px;
+    }
+}
