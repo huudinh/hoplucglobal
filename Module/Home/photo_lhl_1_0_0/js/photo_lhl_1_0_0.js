@@ -141,7 +141,7 @@ const photo_lhl_1_0_0_main = (data) => {
                     <div class="sidebar_da_1_1_0">
                         <div class="sidebar_da_1_1_0__title">
                             <span>${photo_lhl_1_0_0_title}</span>
-                            <button onclick="photo_lhl_1_0_0_handleOpenMenu()">Chọn dịch vụ khác</button>
+                            <button onclick="photo_lhl_1_0_0_handleOpenMenu()">Photo Other >></button>
                         </div>
                         ${photo_lhl_1_0_0_isOpenMenu ?`<ul class='slideIn'>${tab}</ul>`:``}
                     

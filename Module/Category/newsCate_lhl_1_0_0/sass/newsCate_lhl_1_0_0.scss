@@ -38,3 +38,18 @@
         }
     }
 }
+@media (max-width:600px){
+    .newsCate_lhl_1_0_0__item{
+        flex-direction: column;
+        padding: 0;
+    }
+    .newsCate_lhl_1_0_0__pic {
+        width:100%;
+    }
+    .newsCate_lhl_1_0_0__contentTitle{
+        padding-top:5px;
+    }
+    .newsCate_lhl_1_0_0__content{
+        margin:5px 0 10px;
+    }
+}

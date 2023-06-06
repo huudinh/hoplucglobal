@@ -142,3 +142,28 @@
         }
     }
 }
+@media (max-width:600px){
+    .newsDetail_lhl_1_0_0__contentNewsItem{
+        flex-direction: column;
+    }
+    .newsDetail_lhl_1_0_0__contentNewsItem__pic {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .newsDetail_lhl_1_0_0__contentNewsItem__text{
+        padding-left: 0;
+    }
+    .newsDetail_lhl_1_0_0 img{
+        margin:20px auto 0;
+    }
+    .newsDetail_lhl_1_0_0__title{
+        font-size:20px;
+    }
+    .newsDetail_lhl_1_0_0__contentTrainingItem__pic{
+        width:140px;
+    }
+    .newsDetail_lhl_1_0_0__contentTrainingItem__text{
+        text-align: left;
+        padding-left: 20px;
+    }
+}

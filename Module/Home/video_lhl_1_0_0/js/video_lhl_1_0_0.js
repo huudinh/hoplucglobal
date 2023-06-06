@@ -177,7 +177,7 @@ const video_lhl_1_0_0_main = (data) => {
                     <div class="sidebar_da_1_0_0">
                         <div class="sidebar_da_1_0_0__title">
                             <span>${video_lhl_1_0_0_title}</span>
-                            <button onclick="video_lhl_1_0_0_handleOpenMenu()">Chọn dịch vụ khác</button>
+                            <button onclick="video_lhl_1_0_0_handleOpenMenu()">Video Other >></button>
                         </div>
                         ${video_lhl_1_0_0_isOpenMenu ? `<ul class="slideIn">${tab}</ul>` : ``}
                     </div>

@@ -1,4 +1,4 @@
-.clients_lhl_1_0_0{
+.clientsCate_lhl_1_0_0{
     ul{
         padding: 0;
         margin: 15px 0 0;
@@ -30,5 +30,10 @@
                 transform: scale(1.05);
             }
         }
+    }
+}
+@media (max-width:600px){
+    .clientsCate_lhl_1_0_0 li{
+        width:50%
     }
 }
