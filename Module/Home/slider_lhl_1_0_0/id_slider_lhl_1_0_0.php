@@ -17,12 +17,14 @@
                                                 'label' => 'Tiêu đề',
                                                 'name' => 'sliderItemText',
                                                 'type' => 'text',
+                                                'default_value' => 'Slider',
                                             ),
                                             array(
                                                 'key' => 'id_slider_lhl_1_0_0_sub1_sub2',
                                                 'label' => 'Link ảnh (size 1920 x 900)',
                                                 'name' => 'sliderItemLink',
                                                 'type' => 'text',
+                                                'default_value' => '/wp-content/themes/SCI_Theme/Module/Home/slider_lhl_1_0_0/images/slider.jpg',
                                             ),
                                             array(
                                                 'key' => 'id_slider_lhl_1_0_0_sub1_sub3',

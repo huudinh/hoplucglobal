@@ -35,8 +35,8 @@ const modalPop = (link) => {
               <div class="modal-pic" style="text-align:center">
                     <div class="album"></div>
                 <div class="album__control">
-                    <button class="album__arrow album__arrow--prev"><i class="icon-angle-left"></i></button>
-                    <button class="album__arrow album__arrow--next"><i class="icon-angle-right"></i></button>
+                    <button class="album__arrow album__arrow--prev"><img width="32" height="32" src="${album_lhl_1_0_0_url}/images/arrow-icon.svg" alt=""></button>
+                    <button class="album__arrow album__arrow--next"><img width="32" height="32" src="${album_lhl_1_0_0_url}/images/arrow-icon.svg" alt=""></button>
                 </div>
               </div>
           </div>

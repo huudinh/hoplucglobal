@@ -91,7 +91,7 @@ const photo_lhl_1_0_0_MenuItem = (item, active) => {
 // component PicItem
 const photo_lhl_1_0_0_PicItem = (item, i) => {
     return `<div onclick="photo_lhl_1_0_0_handleOpenModal('${item}',${i})" class="photo_lhl_1_0_0__item">
-            <img width="390" height="211" src="${item}" alt="">
+            <img width="390" height="211" src="/rs?w=193&h=129&src=${item}" alt="">
         </div>`
 }
 

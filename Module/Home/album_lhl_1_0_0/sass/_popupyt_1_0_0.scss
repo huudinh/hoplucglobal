@@ -13,7 +13,7 @@
         display: block;
         position: absolute;
         z-index: 1;
-        background: url(../images/youtube.png) center no-repeat;
+        background: url('/wp-content/themes/SCI_Theme/Module/Home/album_lhl_1_0_0/images/youtube.png') center no-repeat;
         transition: 0.3s ease-out;
         background-size: 100%;
         width: 60px;
@@ -21,7 +21,7 @@
         left: 50%;
         top: 50%;
         transition: 0.3s;
-        transform: translate(-20px, -20px);
+        transform: translate(-30px, -30px);
         // -webkit-filter: grayscale(100%);
         // filter: grayscale(100%);
         opacity: 1;

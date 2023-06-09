@@ -13,17 +13,3 @@ menuItem.forEach((item) => {
     item.classList.toggle("open");
   });
 });
-
-
-function urlHandler(value) {                               
-  window.location.assign(`${value}`);
-  let x = document.querySelector('.header_dls_1_0_0__language');
-  
-  if(x.classList[1] == 'en'){
-      x.classList.remove('en');
-      x.classList.add('vi');
-  } else {
-      x.classList.remove('vi');
-      x.classList.add('en');
-  }
-}

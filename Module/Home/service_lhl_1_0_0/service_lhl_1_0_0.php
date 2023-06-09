@@ -1,28 +1,34 @@
-<?php
-    if($check == 0){
-        include(locate_template("Module/Home/service_lhl_1_0_0/sass/service_lhl_1_0_0_css.php")); 
-    }
-?>      
-
 <section class="service_lhl_1_0_0 ">
+    <div class="service_lhl_1_0_0__bg"></div>
     <div class="container">
-        <div class="main_dls_1_0_0__title fadeInUp load"><?php echo $field['service_title'] ?></div>
-        <div class="main_dls_1_0_0__line fadeInUp load"></div>
-        <div class="service_lhl_1_0_0__content fadeInUp load">
-            <?php 
-                $content = $field['data'];
-                foreach( $content as $key => $image ):
-                    // <a class="service_lhl_1_0_0__item" href="'.$image['caption'].'">
-                    // <a class="service_lhl_1_0_0__item" href="/vi/dich-vu/">
-                    echo '
-                        <a class="service_lhl_1_0_0__item" href="/our-services/">
-                            <img src="'.$image['url'].'" alt="'.$image['title'].'" />
-                        </a>
-                    ';
-                endforeach;
-            ?>
-        </div>
-        <div class="service_lhl_1_0_0__content fadeInUp load"><?php echo $field['service_content'] ?></div>
-
+        <div class="slide_step" id="slide_step"></div>
+        <ul class="service_lhl_1_0_0__control" id="slide_stepControl">
+            <li class="prev"></li>
+            <li class="next"></li>
+        </ul>
     </div>
 </section>
+<script>
+    let service_lhl_1_0_0_data = [
+        <?php
+            $category_id = $field['service_content'];
+            $args = array(
+                'post_status' => 'publish',
+                'showposts' => 6,
+                'cat' => $category_id,
+            );
+            $getposts = new WP_query($args); 
+            global $wp_query; $wp_query->in_the_loop = true; 
+            while ($getposts->have_posts()) : $getposts->the_post();     
+                echo '
+                    {
+                        src:`/rs/?w=220&h=144&src='.get_the_post_thumbnail_url($post->ID).'`,
+                        link:`'.get_permalink($post->ID).'`,
+                        text:`'.get_the_title($post->ID).'`,
+                    },
+                ';
+            endwhile; 
+            wp_reset_postdata();
+        ?>
+    ];
+</script>

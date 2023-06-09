@@ -1,21 +1,15 @@
 <?php 
-	/* Template Name: Page Home
+	/* Template Name: Page Photo
 	* Template Post Type: page
     */       
-// Custom thông báo bảo trì
-// if (!is_user_logged_in()){
-// 	echo '<div style="text-align:center; padding: 50px 0; min-height: 500px;">Website đang trong quá trình bảo trì, vui lòng quay lại sau !
-// 		Rất xin lỗi vì sự bất tiện này !</div>
-// 	';
-// 	exit();
-// } 
-//set headers to NOT cache a page
-header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
-header("Pragma: no-cache"); //HTTP 1.0
-header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
 
-//or, if you DO want a file to cache, use:
-header("Cache-Control: max-age=31557600"); //30days (60sec  60min  24hours * 30days)
+    //set headers to NOT cache a page
+    header("Cache-Control: no-cache, must-revalidate"); //HTTP 1.1
+    header("Pragma: no-cache"); //HTTP 1.0
+    header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+
+    //or, if you DO want a file to cache, use:
+    header("Cache-Control: max-age=31557600"); //30days (60sec  60min  24hours * 30days)
 
 ?>
 <!DOCTYPE html>
@@ -43,12 +37,7 @@ header("Cache-Control: max-age=31557600"); //30days (60sec  60min  24hours * 30d
             include(locate_template('Module/assets/sass/custom.min.css')); 
             include(locate_template("Module/Header/header_lhl_1_0_0/sass/header_lhl_1_0_0.min.css"));
             include(locate_template("Module/Footer/footer_lhl_1_0_0/sass/footer_lhl_1_0_0.min.css"));
-            include(locate_template("Module/Home/slider_lhl_1_0_0/sass/slider_lhl_1_0_0.min.css"));
-            include(locate_template("Module/Home/service_lhl_1_0_0/sass/service_lhl_1_0_0.min.css"));
-            include(locate_template("Module/Home/number_lhl_1_0_0/sass/number_lhl_1_0_0.min.css"));
-            include(locate_template("Module/Home/clients_lhl_1_0_0/sass/clients_lhl_1_0_0.min.css"));
-            include(locate_template("Module/Home/news_lhl_1_0_0/sass/news_lhl_1_0_0.min.css"));
-            include(locate_template("Module/Home/album_lhl_1_0_0/sass/album_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Home/photo_lhl_1_0_0/sass/photo_lhl_1_0_0.min.css"));
         ?>
     </style>
 </head>
@@ -65,13 +54,9 @@ header("Cache-Control: max-age=31557600"); //30days (60sec  60min  24hours * 30d
     <script>
         <?php
             include(locate_template('Module/assets/js/lib.min.js')); 
-            include(locate_template('Module/assets/js/tiny-slider.min.js')); 
             include(locate_template('Module/assets/js/module.min.js')); 
             include(locate_template('Module/Header/header_lhl_1_0_0/js/header_lhl_1_0_0.min.js')); 
-            include(locate_template('Module/Home/slider_lhl_1_0_0/js/slider_lhl_1_0_0.min.js')); 
-            include(locate_template('Module/Home/service_lhl_1_0_0/js/service_lhl_1_0_0.min.js')); 
-            include(locate_template('Module/Home/number_lhl_1_0_0/js/number_lhl_1_0_0.min.js')); 
-            include(locate_template('Module/Home/album_lhl_1_0_0/js/album_lhl_1_0_0.min.js')); 
+            include(locate_template('Module/Home/photo_lhl_1_0_0/js/photo_lhl_1_0_0.min.js')); 
         ?>
     </script>
 </body>

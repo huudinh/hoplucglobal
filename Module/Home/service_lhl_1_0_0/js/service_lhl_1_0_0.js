@@ -33,6 +33,9 @@ var slide_step = tns({
         },
         500: {
             items: 3,
+        },
+        800: {
+            items: 5,
         }
     },
 });

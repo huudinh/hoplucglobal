@@ -69,6 +69,7 @@
         background-size: cover;
     }
     .slider__text{
+        display: none;
         padding-top: 20px;
         color: white;
         position: absolute;
@@ -99,15 +100,16 @@
         background-position: center;
         background-repeat: no-repeat;
         background-color: #F2F2F2;
+        display: none;
     }
     .slider__controlLeft:hover:after,.slider__controlRight:hover:after{
         opacity: 0.8;
     }
     .slider__controlLeft::after{
-        background-image: url(../images/icon-left.png);
+        background-image: url('/wp-content/themes/SCI_Theme/Module/Home/slider_lhl_1_0_0/images/icon-left.png');
     }
     .slider__controlRight::after{
-        background-image: url(../images/icon-right.png);
+        background-image: url('/wp-content/themes/SCI_Theme/Module/Home/slider_lhl_1_0_0/images/icon-right.png');
     }
     
     /* The dots/bullets/indicators */

@@ -6,7 +6,6 @@ require_once 'shortcode.php';
 
 //Thêm Page Field
 include "options/group_page_field.php";
-include "options/cate_field.php";
 
 $role_object = get_role( 'editor' );
 $role_object->add_cap( 'manage_options' );
@@ -273,5 +272,29 @@ function filter_site_upload_size_limit( $size ) {
     return 1024 * 1024 * 0.25; 
 } 
 add_filter( 'upload_size_limit', 'filter_site_upload_size_limit', 120 );
+
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Cấu hình website',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+    
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Theme Header Settings',
+    //     'menu_title'    => 'Header',
+    //     'parent_slug'   => 'theme-general-settings',
+    // ));
+    
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Theme Footer Settings',
+    //     'menu_title'    => 'Footer',
+    //     'parent_slug'   => 'theme-general-settings',
+    // ));
+    
+}
 
 ?>

@@ -1,28 +1,31 @@
-<?php
-    if($check == 0){
-        include(locate_template("Module/Home/clients_lhl_1_0_0/sass/clients_lhl_1_0_0_css.php")); 
-    }
-?>      
-
 <section class="clients_lhl_1_0_0 ">
     <div class="container">
-        <div class="main_dls_1_0_0__title fadeInUp load"><?php echo $field['service_title'] ?></div>
-        <div class="main_dls_1_0_0__line fadeInUp load"></div>
-        <div class="clients_lhl_1_0_0__content fadeInUp load">
-            <?php 
-                $content = $field['data'];
-                foreach( $content as $key => $image ):
-                    // <a class="clients_lhl_1_0_0__item" href="'.$image['caption'].'">
-                    // <a class="clients_lhl_1_0_0__item" href="/vi/dich-vu/">
+        <div class="clients_lhl_1_0_0__title"><?php echo $field['client_title'] ?></div>
+        <div class="clients_lhl_1_0_0__box">
+            <?php
+                $category = $field['client_content'];
+                $category_id = $category->term_id;
+                $cate_link = esc_html( $category->slug );
+
+                $args = array(
+                    'post_status' => 'publish',
+                    'showposts' => 12,
+                    'cat' => $category_id,
+                );
+                $getposts = new WP_query($args); 
+                global $wp_query; $wp_query->in_the_loop = true; 
+                while ($getposts->have_posts()) : $getposts->the_post();     
                     echo '
-                        <a class="clients_lhl_1_0_0__item" href="/our-services/">
-                            <img src="'.$image['url'].'" alt="'.$image['title'].'" />
+                        <a href="'.get_permalink($post->ID).'" title="'.get_the_title($post->ID).'">
+                            <img src="/rs/?w=152&h=85&src='.get_the_post_thumbnail_url($post->ID).'" alt="'.get_the_title($post->ID).'">
                         </a>
                     ';
-                endforeach;
+                endwhile; 
+                wp_reset_postdata();
             ?>
         </div>
-        <div class="clients_lhl_1_0_0__content fadeInUp load"><?php echo $field['service_content'] ?></div>
-
+        <div class="clients_lhl_1_0_0__more">
+            <a href="/<?php echo $cate_link ?>/" title="Read more" class="read-more">Read more »</a>
+        </div>
     </div>
 </section>
