@@ -1,15 +1,15 @@
-.tags_lhl_1_0_0{
-    span{
+.tags_lhl_1_0_0 {
+    margin-bottom: 15px;
+    span {
         padding-left: 20px;
         padding-right: 10px;
-        background: url(../images/tags.png) no-repeat left center;
+        background: url('/wp-content/themes/SCI_Theme/Module/Post/tags_lhl_1_0_0/images/tags.png') no-repeat left center;
     }
-    a{
+    a {
         color: var(--primary-color);
-        &:hover{
+        &:hover {
             opacity: .8;
             text-decoration: underline;
         }
     }
-   
 }

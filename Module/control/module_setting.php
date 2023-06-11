@@ -1,6 +1,7 @@
 <?php
-    $module_id =  get_option('mfpd_option_name');
-    $page_field = get_field('group_page_field',$module_id);
+    // $module_id =  get_option('mfpd_option_name');
+    // $page_field = get_field('group_page_field',$module_id);
+    $page_field = get_field('group_page_field', 'option');
     // Đường dẫn đến theme
     $arrcheck = array();
     $css_inline = '';
@@ -10,7 +11,7 @@
             if (!empty($field_0)){
                 foreach($field_0 as $field){
                     $name = $field['acf_fc_layout'];
-                    if($name == 'sidebar_dls_1_0_0'){
+                    if($name == 'navSidebar_lhl_1_0_0'){
                         if(in_array($name,$arrcheck)){
                             $check = 1;
                         }else{
@@ -18,7 +19,6 @@
                             $check = 0;
                         }
                         include(locate_template('template-parts/content-'.$name.'.php'));
-                        // include(locate_template('Module/Category/sidebar_dls_1_0_0/sidebar_dls_1_0_0.php'))
                     }
                 }
             }

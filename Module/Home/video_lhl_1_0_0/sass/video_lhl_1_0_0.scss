@@ -14,7 +14,7 @@
     justify-content: center;
     &__sidebar {
         width: 25%;
-        margin-top:20px;
+        margin-top: 20px;
     }
     &__content {
         width: 75%;
@@ -143,7 +143,7 @@
     &__item {
         width: 23%;
         cursor: pointer;
-        &Box{
+        &Box {
             position: relative;
         }
         img {
@@ -191,7 +191,7 @@
         &__title {
             font-size: 18px;
             margin-bottom: 45px;
-            margin-top:10px;
+            margin-top: 10px;
         }
         &__box {
             gap: 10px;
@@ -217,7 +217,7 @@
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    z-index: 100;
+    z-index: 1000;
     &__box {
         position: relative;
         margin-top: 10vh;
@@ -283,34 +283,37 @@
         }
     }
 }
-@media (max-width:1180px){
+
+@media (max-width:1180px) {
     .video_lhl_1_0_0__item {
         width: 22%;
         cursor: pointer;
     }
 }
-@media (max-width:767px){
-    .video_1_1_0__sidebar{
-        margin-top:0;
+
+@media (max-width:767px) {
+    .video_1_1_0__sidebar {
+        margin-top: 0;
     }
-    .modalVideo_da_1_0_0__box{
-        width:100%;
-        padding:15px;
+    .modalVideo_da_1_0_0__box {
+        width: 100%;
+        padding: 15px;
     }
-    .modalVideo_da_1_0_0__close{
+    .modalVideo_da_1_0_0__close {
         right: 20px;
         top: -10px;
     }
-    .modalVideo_da_1_0_0__control{
+    .modalVideo_da_1_0_0__control {
         left: 40px;
         width: 80%;
     }
-    .sidebar_da_1_0_0 ul li{
+    .sidebar_da_1_0_0 ul li {
         border-top: 0;
         border-bottom: 1px dotted #ccc;
     }
 }
-@media (max-width:600px){
+
+@media (max-width:600px) {
     .video_lhl_1_0_0__item {
         width: 48%;
     }

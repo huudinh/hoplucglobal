@@ -16,7 +16,7 @@
         height: auto;
     }
     .iconRight {
-        background: url(../images/arrow.svg) 0 0 no-repeat;
+        background: url('/wp-content/themes/SCI_Theme/Module/Post/newsDetail_lhl_1_0_0/images/arrow.svg') 0 0 no-repeat;
         background-size: 100%;
         width: 15px;
         height: 15px;
@@ -24,7 +24,7 @@
         vertical-align: middle;
     }
     .iconTick {
-        background: url(../images/tick.svg) 0 0 no-repeat;
+        background: url('/wp-content/themes/SCI_Theme/Module/Post/newsDetail_lhl_1_0_0/images/tick.svg') 0 0 no-repeat;
         background-size: 100%;
         width: 20px;
         height: 20px;
@@ -32,7 +32,7 @@
         vertical-align: middle;
     }
     &__note {
-        background: url(../images/note.svg) 0 0 no-repeat;
+        background: url('/wp-content/themes/SCI_Theme/Module/Post/newsDetail_lhl_1_0_0/images/note.svg') 0 0 no-repeat;
         padding: 0px 20px 10px 35px;
         background-size: 25px;
         font-style: italic;
@@ -71,9 +71,9 @@
                 text-align: center;
                 font-size: 16px;
             }
-            text-align: left;
             table {
                 width: 100%;
+                text-align: left;
             }
             td,
             th {
@@ -142,28 +142,29 @@
         }
     }
 }
-@media (max-width:600px){
-    .newsDetail_lhl_1_0_0__contentNewsItem{
+
+@media (max-width:600px) {
+    .newsDetail_lhl_1_0_0__contentNewsItem {
         flex-direction: column;
     }
     .newsDetail_lhl_1_0_0__contentNewsItem__pic {
         width: 50%;
         margin: 0 auto;
     }
-    .newsDetail_lhl_1_0_0__contentNewsItem__text{
+    .newsDetail_lhl_1_0_0__contentNewsItem__text {
         padding-left: 0;
     }
-    .newsDetail_lhl_1_0_0 img{
-        margin:20px auto 0;
+    .newsDetail_lhl_1_0_0 img {
+        margin: 20px auto 0;
     }
-    .newsDetail_lhl_1_0_0__title{
-        font-size:18px;
-        margin:15px 0 10px;
+    .newsDetail_lhl_1_0_0__title {
+        font-size: 18px;
+        margin: 15px 0 10px;
     }
-    .newsDetail_lhl_1_0_0__contentTrainingItem__pic{
-        width:140px;
+    .newsDetail_lhl_1_0_0__contentTrainingItem__pic {
+        width: 140px;
     }
-    .newsDetail_lhl_1_0_0__contentTrainingItem__text{
+    .newsDetail_lhl_1_0_0__contentTrainingItem__text {
         text-align: left;
         padding-left: 20px;
     }

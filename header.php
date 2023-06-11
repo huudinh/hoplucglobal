@@ -13,7 +13,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<link type="image/x-icon" rel="shortcut icon" href="/css/lib/favicon.png">
+	<link type="image/x-icon" rel="shortcut icon" href="/wp-content/themes/SCI_Theme/Module/assets/images/favicon.png">
 	<?php 
 	  if(is_search()){
 		echo '<meta name="googlebot" content="noindex">'; } 
@@ -25,22 +25,25 @@
 	// if($paged > 1 || is_author() || is_tag() || is_date() || is_attachment()){
 	// 	echo '<meta name="robots" content="noindex,nofollow" />'; } 
 	?>
-	<?php
-        include(locate_template('Module/assets/sass/lib_css.php')); 
-        include(locate_template('Module/assets/sass/custom_css.php')); 
-    ?>
+	<style>
+		<?php
+			include(locate_template('Module/assets/sass/lib.min.css')); 
+			include(locate_template('Module/assets/sass/custom.min.css')); 
+			include(locate_template("Module/Header/header_lhl_1_0_0/sass/header_lhl_1_0_0.min.css"));
+			include(locate_template("Module/Footer/footer_lhl_1_0_0/sass/footer_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Home/slider_lhl_1_1_0/sass/slider_lhl_1_1_0.min.css"));
+            include(locate_template("Module/Post/newsDetail_lhl_1_0_0/sass/newsDetail_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Post/newsOther_lhl_1_0_0/sass/newsOther_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Post/tags_lhl_1_0_0/sass/tags_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Post/navSidebar_lhl_1_0_0/sass/navSidebar_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Category/newsCate_lhl_1_0_0/sass/newsCate_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Category/clientsCate_lhl_1_0_0/sass/clientsCate_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Category/pagination_lhl_1_0_0/sass/pagination_lhl_1_0_0.min.css"));
+		?>
+	</style>
 </head>
-<body>
-	<main class="main_dls_1_0_0  main_dls_1_0_0--page">
-			<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
-			<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>
-			<?php
-				// if( is_single() || (get_query_var('cat') != 3) ) {
-				// 	echo '
-				// 	';
-				// }
-			?>
+<body class="site">
+<div class="page">			
 <?php 
-	get_template_part('Module/module_header'); 
-	get_template_part('Module/Category/breadcrumb_dls_1_0_0/breadcrumb_dls_1_0_0');	
+	get_template_part('Module/control/module_header'); 
 ?>

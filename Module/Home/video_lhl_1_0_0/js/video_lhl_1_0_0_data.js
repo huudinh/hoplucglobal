@@ -3,96 +3,64 @@ const video_lhl_1_0_0_menu = [{
     link: `#page-1`,
     img: [{
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
-        src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
+        src: `SU2x40QAe8c`,
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic3.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic3.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }]
 }, {
     name: `Visions & values`,
     link: `#page-2`,
     img: [{
-        desc: `Welding trade test to supply welders to Romania for TQ Company`,
-        src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
-    }, 
-    {
-        desc: `Welding trade test to supply welders to Romania for TQ Company`,
-        src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
-    },
-    {
-        desc: `Welding trade test to supply welders to Romania for TQ Company`,
-        src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
-    },
-    
-]
+            desc: `Welding trade test to supply welders to Romania for TQ Company`,
+            src: `aM_XIWjxcYA`,
+        },
+        {
+            desc: `Welding trade test to supply welders to Romania for TQ Company`,
+            src: `aM_XIWjxcYA`,
+        },
+        {
+            desc: `Welding trade test to supply welders to Romania for TQ Company`,
+            src: `aM_XIWjxcYA`,
+        },
+
+    ]
 }, {
     name: `Visions & values`,
     link: `#page-3`,
     img: [{
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic3.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic3.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic3.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic3.jpg`
     }]
 }, {
     name: `Why choose Hopluc global?`,
@@ -100,38 +68,24 @@ const video_lhl_1_0_0_menu = [{
     img: [{
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic3.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic3.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic3.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic3.jpg`
     }]
 }, {
     name: `Training Centers`,
@@ -139,37 +93,23 @@ const video_lhl_1_0_0_menu = [{
     img: [{
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic1.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic1.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic3.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic3.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic2.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic2.jpg`
     }, {
         desc: `Welding trade test to supply welders to Romania for TQ Company`,
         src: `aM_XIWjxcYA`,
-        small: `${video_lhl_1_0_0_url}images/pic3.jpg`,
-        large: `${video_lhl_1_0_0_url}images/pic3.jpg`
     }]
 }]

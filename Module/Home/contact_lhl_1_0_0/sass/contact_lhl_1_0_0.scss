@@ -2,6 +2,9 @@
     font-family: var(--primary-font);
     margin: 0 auto;
     font-size: 15px;
+    .border {
+        border: 1px solid #c00;
+    }
     &__title {
         font-weight: 700;
         font-size: 26px;
@@ -64,7 +67,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         padding: 15px;
-        margin-top:20px;
+        margin-top: 20px;
         &Title {
             margin-bottom: 10px;
             font-weight: 600;
@@ -122,11 +125,11 @@
         width: 100%;
         margin-top: 30px;
     }
-    .contact_lhl_1_0_0__title{
-        font-size:18px;
-        margin:10px 0;
+    .contact_lhl_1_0_0__title {
+        font-size: 18px;
+        margin: 10px 0;
     }
-    .contact_lhl_1_0_0__form{
-        margin-top:0;
+    .contact_lhl_1_0_0__form {
+        margin-top: 0;
     }
 }

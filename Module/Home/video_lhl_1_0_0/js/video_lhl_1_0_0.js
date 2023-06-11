@@ -1,10 +1,9 @@
-
-function numberPage(pageNumber, index){
+function numberPage(pageNumber, index) {
     let array = [];
-    for(let i = 0; i < video_lhl_1_0_0_menu.length; i++){
+    for (let i = 0; i < video_lhl_1_0_0_menu.length; i++) {
         array.push(video_lhl_1_0_0_menu[i].img.length);
     }
-    if(array[index] < pageNumber) {
+    if (array[index] < pageNumber) {
         return array[index];
     } else {
         return video_lhl_1_0_0_pageNumber;
@@ -49,7 +48,6 @@ const video_lhl_1_0_0_handleChangeTab = (name, link, index) => {
     console.log(index)
     window.location.hash = link
     video_lhl_1_0_0_title = name
-    // video_lhl_1_0_0_indexViewMore = video_lhl_1_0_0_pageNumber;
 
     // Check PageNumber
     video_lhl_1_0_0_indexViewMore = numberPage(video_lhl_1_0_0_pageNumber, index);
@@ -96,7 +94,7 @@ const video_lhl_1_0_0_handleOpenModal = (smallImg, i) => {
     video_lhl_1_0_0_indexDetail.setIndex(i)
     video_lhl_1_0_0_menu.forEach(item => {
         if (item.link === window.location.hash) {
-            img = item.img.filter(img => img.small === smallImg)
+            img = item.img.filter(img => img.src === smallImg)
         }
     })
     document.querySelector('body').insertAdjacentHTML("beforeend", video_lhl_1_0_0_PicModal(img[0].src))
@@ -117,7 +115,7 @@ const video_lhl_1_0_0_PicItem = ({ smallImg, desc, idx }) => {
     return ` 
     <div onclick="video_lhl_1_0_0_handleOpenModal('${smallImg}',${idx})" class="video_lhl_1_0_0__item">
         <div class="video_lhl_1_0_0__itemBox">
-            <img width="390" height="211" src="${smallImg}" alt="">
+            <img width="390" height="211" src="https://img.youtube.com/vi/${smallImg}/hqdefault.jpg" alt="">
             <div class="video_lhl_1_0_0__play">
                 <img width="50" height="50" src="${video_lhl_1_0_0_url}images/play-icon.svg" alt="">
             </div>
@@ -144,25 +142,25 @@ const video_lhl_1_0_0_PicModal = (src) => {
 
 // giao diện chính
 const video_lhl_1_0_0_main = (data) => {
-    let tab = ''
-    let picItem = ''
-    let length = 0
-    data.forEach((item, index) => {
-        if (window.location.hash === item.link) {
-            length = item.img.length
-        }
-        tab += video_lhl_1_0_0_MenuItem(item, index, window.location.hash === item.link ? true : false, length)
-        for (let i = 0; i < video_lhl_1_0_0_indexViewMore; i++) {
+        let tab = ''
+        let picItem = ''
+        let length = 0
+        data.forEach((item, index) => {
             if (window.location.hash === item.link) {
-                picItem += video_lhl_1_0_0_PicItem({
-                    smallImg: item.img[i].small,
-                    desc: item.img[i].desc,
-                    idx: i
-                })
+                length = item.img.length
             }
-        }
-    })
-    return `<div class="container">
+            tab += video_lhl_1_0_0_MenuItem(item, index, window.location.hash === item.link ? true : false, length)
+            for (let i = 0; i < video_lhl_1_0_0_indexViewMore; i++) {
+                if (window.location.hash === item.link) {
+                    picItem += video_lhl_1_0_0_PicItem({
+                        smallImg: item.img[i].src,
+                        desc: item.img[i].desc,
+                        idx: i
+                    })
+                }
+            }
+        })
+        return `<div class="container">
             <div class="video_1_0_0">
                 <div class="video_1_0_0__content">
                     <div class="video_lhl_1_0_0">

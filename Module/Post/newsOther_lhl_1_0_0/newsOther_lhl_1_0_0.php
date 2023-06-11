@@ -1,10 +1,6 @@
-<?php
-	include(locate_template("Module/Post/newsOther_dls_1_1_0/newsOther_dls_1_1_0_css.php"));
-?>
-<div class="newsOther_dls_1_1_0">
-	<div class="newsOther_dls_1_1_0__title">Other News</div>
-	<div class="newsOther_dls_1_1_0__line"></div>
-	<ul>
+<div class="newsOther_lhl_1_0_0">
+	<div class="newsOther_lhl_1_0_0__title">Other News</div>
+	<ul>		
 		<?php
 			$related = get_posts( 
 				array( 
@@ -22,11 +18,7 @@
 					$img = ($kim[0]!='')?$kim[0]:catch_that_image($post->ID);
 					echo'
 						<li>
-							<div class="newsOther_dls_1_1_0__pic">
-								<a href="'.get_permalink().'"><img width="80" height="80" src="'.$img.'" alt="'.get_the_title().'"></a>
-							</div>
-							<h3 class="newsOther_dls_1_1_0__tt">
-								<span>Ngày '.$time.'</span>
+							<h3 class="newsOther_lhl_1_0_0__tt">
 								<a href="'.get_permalink().'">'.get_the_title().'</a>
 							</h3>
 						</li>

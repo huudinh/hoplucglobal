@@ -1,5 +1,5 @@
 <?php 
-	/* Template Name: Page Photo
+	/* Template Name: Page Video
 	* Template Post Type: page
     */       
 
@@ -37,7 +37,7 @@
             include(locate_template('Module/assets/sass/custom.min.css')); 
             include(locate_template("Module/Header/header_lhl_1_0_0/sass/header_lhl_1_0_0.min.css"));
             include(locate_template("Module/Footer/footer_lhl_1_0_0/sass/footer_lhl_1_0_0.min.css"));
-            include(locate_template("Module/Home/photo_lhl_1_0_0/sass/photo_lhl_1_0_0.min.css"));
+            include(locate_template("Module/Home/video_lhl_1_0_0/sass/video_lhl_1_0_0.min.css"));
             include(locate_template("Module/Home/slider_lhl_1_1_0/sass/slider_lhl_1_1_0.min.css"));
         ?>
     </style>
@@ -57,7 +57,7 @@
             include(locate_template('Module/assets/js/lib.min.js')); 
             include(locate_template('Module/assets/js/module.min.js')); 
             include(locate_template('Module/Header/header_lhl_1_0_0/js/header_lhl_1_0_0.min.js')); 
-            include(locate_template('Module/Home/photo_lhl_1_0_0/js/photo_lhl_1_0_0.min.js')); 
+            include(locate_template('Module/Home/video_lhl_1_0_0/js/video_lhl_1_0_0.min.js')); 
         ?>
     </script>
 </body>

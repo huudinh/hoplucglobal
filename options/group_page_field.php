@@ -304,6 +304,22 @@ if( function_exists('acf_add_local_field_group') ):
                                     ),
                                 ),
                             ), 
+                            'id_slider_lhl_1_1_0' => array(
+                                'key' => 'id_slider_lhl_1_1_0',
+                                'name' => 'slider_lhl_1_1_0',
+                                'label' => 'Slider 1.1.0',
+                                'display' => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'id_slider_lhl_1_1_0_sub1',
+                                        'label' => 'Link ảnh',
+                                        'name' => 'data',
+                                        'type' => 'textarea',
+                                        'rows' => 1,
+                                        'new_lines' => '',
+                                    ),
+                                ),
+                            ),
                             'id_service_lhl_1_0_0' => array(
                                 'key' => 'id_service_lhl_1_0_0',
                                 'name' => 'service_lhl_1_0_0',
@@ -479,6 +495,134 @@ if( function_exists('acf_add_local_field_group') ):
                                     ),
                                 ),
                             ),
+                            'id_video_lhl_1_0_0' => array(
+                                'key' => 'id_video_lhl_1_0_0',
+                                'name' => 'video_lhl_1_0_0',
+                                'label' => 'Video 1.0.0',
+                                'display' => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'id_video_lhl_1_0_0_sub1',
+                                        'label' => 'Danh sách Video',
+                                        'name' => 'video',
+                                        'type' => 'flexible_content',
+                                        'layouts' => array(
+                                            'layout_content' => array(
+                                                'key' => 'id_video_lhl_1_0_0_sub1_layout1',
+                                                'name' => 'videoContent',
+                                                'label' => 'Video Cate',
+                                                'display' => 'block',
+                                                'sub_fields' => array(
+                                                    array(
+                                                        'key' => 'id_video_lhl_1_0_0_sub1_layout1_sub1',
+                                                        'label' => 'Tiêu đề',
+                                                        'name' => 'videoContentTitle',
+                                                        'type' => 'text',
+                                                        'instructions' => '1. Tiêu đề | 2. Link',
+                                                    ),
+                                                    array(
+                                                        'key' => 'id_video_lhl_1_0_0_sub1_layout1_sub2',
+                                                        'label' => 'Nội dung',
+                                                        'name' => 'videoContentBox',
+                                                        'type' => 'repeater',
+                                                        'layout' => 'table',
+                                                        'sub_fields' => array(
+                                                            array(
+                                                                'key' => 'id_video_lhl_1_0_0_sub1_layout1_sub2_sub1',
+                                                                'label' => '',
+                                                                'name' => 'videoContentBoxInfo',
+                                                                'type' => 'textarea',
+                                                                'instructions' => '1. Tiêu đề video | 2. ID Youtobe',
+                                                                'rows' => 2,
+                                                            ),
+                                                        ),
+                                                    ),
+                                                ),
+                                            ),
+                                        ),
+                                        'button_label' => 'Add Row',
+                                    ),
+                                ),
+                            ), 
+                            'id_newsDetail_lhl_1_0_0' => array(
+                                'key' => 'id_newsDetail_lhl_1_0_0',
+                                'name' => 'newsDetail_lhl_1_0_0',
+                                'label' => 'News Detail 1.0.0',
+                                'display' => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'id_newsDetail_lhl_1_0_0_sub1',
+                                        'label' => '',
+                                        'name' => 'video',
+                                        'type' => 'flexible_content',
+                                        'layouts' => array(
+                                            'layout_vision' => array(
+                                                'key' => 'id_newsDetail_lhl_1_0_0_sub1_layout1',
+                                                'name' => 'vision',
+                                                'label' => 'Vision',
+                                                'display' => 'block',
+                                                'sub_fields' => array(                                                   
+                                                    array(
+                                                        'key' => 'id_newsDetail_lhl_1_0_0_sub1_layout1_sub2',
+                                                        'label' => 'Nội dung',
+                                                        'name' => 'visionBox',
+                                                        'type' => 'repeater',
+                                                        'layout' => 'block',
+                                                        'sub_fields' => array(
+                                                            array(
+                                                                'key' => 'id_newsDetail_lhl_1_0_0_sub1_layout1_sub2_sub1',
+                                                                'label' => 'Link ảnh',
+                                                                'name' => 'visionLink',
+                                                                'type' => 'text',
+                                                                'instructions' => '',
+                                                            ),
+                                                            array(
+                                                                'key' => 'id_newsDetail_lhl_1_0_0_sub1_layout1_sub2_sub2',
+                                                                'label' => 'Nội dung',
+                                                                'name' => 'visionContent',
+                                                                'type' => 'wysiwyg',
+                                                                'instructions' => '',
+                                                            ),
+                                                        ),
+                                                    ),
+                                                ),
+                                            ),
+                                            'layout_training' => array(
+                                                'key' => 'id_newsDetail_lhl_1_0_0_sub1_layout2',
+                                                'name' => 'training',
+                                                'label' => 'Training',
+                                                'display' => 'block',
+                                                'sub_fields' => array(                                                   
+                                                    array(
+                                                        'key' => 'id_newsDetail_lhl_1_0_0_sub1_layout2_sub2',
+                                                        'label' => 'Nội dung',
+                                                        'name' => 'trainingBox',
+                                                        'type' => 'repeater',
+                                                        'layout' => 'block',
+                                                        'sub_fields' => array(
+                                                            array(
+                                                                'key' => 'id_newsDetail_lhl_1_0_0_sub1_layout2_sub2_sub1',
+                                                                'label' => 'Link ảnh',
+                                                                'name' => 'trainingLink',
+                                                                'type' => 'text',
+                                                                'instructions' => '',
+                                                            ),
+                                                            array(
+                                                                'key' => 'id_newsDetail_lhl_1_0_0_sub1_layout2_sub2_sub2',
+                                                                'label' => 'Nội dung',
+                                                                'name' => 'trainingContent',
+                                                                'type' => 'wysiwyg',
+                                                                'instructions' => '',
+                                                            ),
+                                                        ),
+                                                    ),
+                                                ),
+                                            ),
+                                        ),
+                                        'button_label' => 'Add Row',
+                                    ),
+                                ),
+                            ),  
                             'id_contact_dls_1_0_0' => array(
                                 'key' => 'id_contact_dls_1_0_0',
                                 'name' => 'contact_dls_1_0_0',
@@ -545,22 +689,22 @@ if( function_exists('acf_add_local_field_group') ):
                             'id' => '',
                         ),
                         'layouts' => array(
-                            'id_sidebar_dls_1_0_0' => array(
-                                'key' => 'id_sidebar_dls_1_0_0',
-                                'name' => 'sidebar_dls_1_0_0',
+                            'id_navSidebar_lhl_1_0_0' => array(
+                                'key' => 'id_navSidebar_lhl_1_0_0',
+                                'name' => 'navSidebar_lhl_1_0_0',
                                 'label' => 'Sidebar 1.0.0',
                                 'display' => 'block',
                                 'sub_fields' => array(
                                     array(
-                                        'key' => 'id_sidebar_dls_1_0_0_sub1',
+                                        'key' => 'id_navSidebar_lhl_1_0_0_sub1',
                                         'label' => 'Tiêu đề',
                                         'name' => 'sidebar_title',
                                         'type' => 'text',
                                     ),
                                     array(
-                                        'key' => 'id_sidebar_dls_1_0_0_sub2',
-                                        'label' => 'Danh sách sản phẩm',
-                                        'name' => 'sidebar_content',
+                                        'key' => 'id_navSidebar_lhl_1_0_0_sub2',
+                                        'label' => 'Nội dung',
+                                        'name' => 'sidebar_data',
                                         'type' => 'wysiwyg',
                                     ),
                                 ),
