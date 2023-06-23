@@ -1,6 +1,12 @@
 <div class="newsCate_lhl_1_0_0">
 	<h1 class="site__title">
-		<?php single_cat_title(); ?>
+		<?php
+			if(is_search()){
+				echo 'Kết quả tìm kiếm';
+			} else {
+				single_cat_title(); 
+			}
+		?>
 	</h1>
 	<div class="newsCate_lhl_1_0_0__box">
 		<?php 
